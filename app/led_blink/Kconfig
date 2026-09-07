@@ -2,7 +2,7 @@
 config APP_LEDBLINK
 	bool "LED Blink Demo"
 	default y
-	depends on ARCH_LEDS
+	depends on USERLED
 	---help---
 		Enable LED blink demo application for STM32F103ZET6.
 		Blinks LED1 (PB0) at 500ms interval.

@@ -1,6 +1,19 @@
 #
 # Contest 2026 team 316 - STM32F103ZET6 Board
 #
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config ARCH_BOARD_CONTEST2026_316_BOARD
+	bool "Contest 2026 team 316 - STM32F103ZET6 board"
+	depends on ARCH_CHIP_STM32F103ZE
+	select ARCH_HAVE_LEDS
+	select ARCH_HAVE_BUTTONS
+	select ARCH_HAVE_IRQBUTTONS
+	---help---
+		OpenVela 2026 AI hardware contest, team 316 (famous), new hardware
+		adaptation track.  STM32F103ZET6 (ARM Cortex-M3) development board.
 
 if ARCH_BOARD_CONTEST2026_316_BOARD
 

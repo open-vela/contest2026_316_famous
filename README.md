@@ -69,10 +69,13 @@ contest2026_316_famous/
 │   │   └── board.h              # 时钟和引脚定义
 │   └── src/
 │       ├── CMakeLists.txt       # 源码 CMake
-│       ├── board_boot.c         # 板级初始化
-│       ├── stm32_gpio.c         # GPIO 驱动
-│       ├── stm32_spi.c          # SPI 驱动
-│       └── stm32_i2c.c          # I2C 驱动
+│       ├── board_boot.c         # 板级初始化（标准入口）
+│       ├── stm32_bringup.c      # 注册 /dev/userleds、/dev/buttons
+│       ├── stm32_gpio.c         # GPIO/LED/按键引脚配置
+│       ├── stm32_spi.c          # SPI 引脚配置
+│       ├── stm32_i2c.c          # I2C 引脚配置
+│       ├── stm32_userleds.c     # 标准用户 LED 驱动
+│       └── stm32_buttons.c      # 标准按键驱动
 ├── app/                          # 应用 Demo
 │   ├── CMakeLists.txt           # 应用 CMake
 │   ├── README.md                # 应用说明

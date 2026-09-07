@@ -9,8 +9,9 @@
   <include name="openvela.xml"/>
 
   <project path="contest2026_316_famous" name="contest2026_316_famous">
-    <linkfile src="app/hello_app" dest="packages/demos/contest2026_316_hello_app"/>
-    <linkfile src="quickapp/hello_quickapp" dest="packages/apps/contest2026_316_hello_quickapp"/>
+    <linkfile src="app/led_blink"   dest="packages/demos/contest2026_316_led_blink"/>
+    <linkfile src="app/button_test" dest="packages/demos/contest2026_316_button_test"/>
+    <linkfile src="app/sysinfo"     dest="packages/demos/contest2026_316_sysinfo"/>
     <linkfile src="board/contest_board" dest="vendor/openvela/boards/contest2026_316_board"/>
   </project>
 </manifest>

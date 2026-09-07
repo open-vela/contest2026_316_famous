@@ -100,8 +100,14 @@ contest_board/
 ├── include/
 │   └── board.h         # Board header (clock, pins)
 └── src/
-    ├── CMakeLists.txt  # Source CMake file
-    └── board_boot.c    # Board initialization
+    ├── CMakeLists.txt     # Source CMake file
+    ├── board_boot.c       # Board entry points (boardinitialize/app_initialize)
+    ├── stm32_bringup.c    # Registers /dev/userleds, /dev/buttons
+    ├── stm32_gpio.c       # GPIO/LED/button pin configuration
+    ├── stm32_spi.c        # SPI1 pin configuration
+    ├── stm32_i2c.c        # I2C1 pin configuration
+    ├── stm32_userleds.c   # Standard user LED driver
+    └── stm32_buttons.c    # Standard button driver
 ```
 
 ## References

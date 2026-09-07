@@ -2,7 +2,7 @@
 config APP_BUTTON_TEST
 	bool "Button Test Demo"
 	default y
-	depends on ARCH_BUTTONS
+	depends on INPUT_BUTTONS
 	---help---
 		Enable button test demo application for STM32F103ZET6.
 		Tests USER button (PA0) with poll mechanism.
